@@ -213,7 +213,87 @@ local PredictionValue = 0.15634
              pingvalue = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
              split = string.split(pingvalue,'(')
              ping = tonumber(split[1])
-            if ping < 130 then
+            elseif ping < 330 then
+                PredictionValue = 0.270
+            elseif ping < 325 then
+                PredictionValue = 0.267
+            elseif ping < 320 then
+                PredictionValue = 0.264
+            elseif ping < 315 then
+                PredictionValue = 0.261
+            elseif ping < 310 then
+                PredictionValue = 0.258
+            elseif ping < 305 then
+                PredictionValue = 0.255
+            elseif ping < 300 then
+                PredictionValue = 0.252
+            elseif ping < 295 then
+                PredictionValue = 0.249
+            elseif ping < 290 then
+                PredictionValue = 0.246
+            elseif ping < 285 then
+                PredictionValue = 0.243
+            elseif ping < 280 then
+                PredictionValue = 0.241
+            elseif ping < 275 then
+                PredictionValue = 0.238
+            elseif ping < 270 then
+                PredictionValue = 0.235
+            elseif ping < 265 then
+                PredictionValue = 0.232
+            elseif ping < 260 then
+                PredictionValue = 0.229
+            elseif ping < 255 then
+                PredictionValue = 0.226
+            elseif ping < 250 then
+                PredictionValue = 0.223
+            elseif ping < 245 then
+                PredictionValue = 0.220
+            elseif ping < 240 then
+                PredictionValue = 0.217
+            elseif ping < 235 then
+                PredictionValue = 0.214
+            elseif ping < 230 then
+                PredictionValue = 0.211
+            elseif ping < 225 then
+                PredictionValue = 0.208
+            elseif ping < 220 then
+                PredictionValue = 0.205
+            elseif ping < 215 then
+                PredictionValue = 0.202
+            elseif ping < 210 then
+                PredictionValue = 0.199
+            elseif ping < 205 then
+                PredictionValue = 0.196
+            elseif ping < 200 then
+                PredictionValue = 0.193
+            elseif ping < 195 then
+                PredictionValue = 0.190
+            elseif ping < 190 then
+                PredictionValue = 0.187
+            elseif ping < 185 then
+                PredictionValue = 0.184
+            elseif ping < 180 then
+                PredictionValue = 0.181
+            elseif ping < 175 then
+                PredictionValue = 0.178
+            elseif ping < 170 then
+                PredictionValue = 0.175
+            elseif ping < 165 then
+                PredictionValue = 0.172
+            elseif ping < 160 then
+                PredictionValue = 0.169
+            elseif ping < 155 then
+                PredictionValue = 0.166
+            elseif ping < 150 then
+                PredictionValue = 0.163
+            elseif ping < 145 then
+                PredictionValue = 0.160
+            elseif ping < 140 then
+                PredictionValue = 0.157
+            elseif ping < 135 then
+                PredictionValue = 0.154
+            elseif ping < 130 then
                 PredictionValue = 0.151
             elseif ping < 125 then
                 PredictionValue = 0.149
