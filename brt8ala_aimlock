@@ -213,6 +213,8 @@ local PredictionValue = 0.15634
              pingvalue = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
              split = string.split(pingvalue,'(')
              ping = tonumber(split[1])
+             if ping < 335 then
+                PredictionValue = 0.273
             elseif ping < 330 then
                 PredictionValue = 0.270
             elseif ping < 325 then
